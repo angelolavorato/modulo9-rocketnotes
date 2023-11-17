@@ -1,13 +1,10 @@
+import { Container } from "./styles"
 
-import "./styles.css"
-export default function Details() {
-
+export function Details() {
   return (
-    <div>
-
-    <h1>Alo</h1>
-
-    <span>JilOO </span>
-    </div>
+    <Container>
+      <h1>Alo</h1>
+      <span>JiL000</span>
+    </Container>
   )
 }
