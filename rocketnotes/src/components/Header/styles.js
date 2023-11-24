@@ -15,6 +15,7 @@ export const Container = styled.header`
 
   padding: 0 80px;
 `
+
 export const Profile = styled.div`
   display: flex;
   align-items: center;
@@ -42,6 +43,7 @@ export const Profile = styled.div`
     }
   }
 `
+
 export const Logout = styled.button`
   border: none;
   background: none;
