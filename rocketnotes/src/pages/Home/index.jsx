@@ -1,38 +1,36 @@
-import{Container, Brand, Menu, Search, Content, NewNote}from './styles';
+import { FiPlus } from 'react-icons/fi'
+import { Container, Brand, Menu, Search, Content, NewNote } from './styles'
 
-import {Header}from '../../components/Header';
-import {ButtonText}from '../../components/ButtonText';
+import { Header } from '../../components/Header'
+import { ButtonText } from '../../components/ButtonText'
 
-
-export function Home(){
-  return(
-<Container>
+export function Home() {
+  return (
+    <Container>
       <Brand>
         <h1>Rocketnotes</h1>
       </Brand>
 
-      <Header/>
-<Menu>
+      <Header />
 
-<li>  <ButtonText title="Todos" $isactive/></li>
-<li><ButtonText title="React"/></li>
-<li><ButtonText title="Node"/></li>
+      <Menu>
+        <li><ButtonText title="Todos" $isactive /></li>
+        <li><ButtonText title="React" /></li>
+        <li><ButtonText title="Nodejs" /></li>
+      </Menu>
 
-</Menu>
+      <Search>
 
-<Search>
+      </Search>
 
-</Search>
+      <Content>
 
-<Content>
-</Content>
-<NewNote>
+      </Content>
 
-</NewNote>
-
-
-
-
+      <NewNote>
+        <FiPlus />
+        Criar nota
+      </NewNote>
     </Container>
   )
 }
